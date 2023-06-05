@@ -118,7 +118,7 @@ const EventCard = (props) => {
                 <img src={Img} alt="event-poster" />
                 {/* <h2 className="sub-title">{summary}</h2> */}
 
-                <div className="d-md-flex justify-content-between align-items-center time-venue">
+                <div className="flex justify-content-center align-items-center time-venue">
                   <div className="time">
                     {props.eventData.eventRegistrationStartDate && (
                       <div>

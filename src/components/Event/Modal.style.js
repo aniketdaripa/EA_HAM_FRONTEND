@@ -73,7 +73,7 @@ export const Main = styled.div`
     transition: 300ms;
 
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.0);
     }
   }
 
@@ -160,7 +160,7 @@ export const Main = styled.div`
 
       &:hover {
         cursor: pointer;
-        transform: scale(1.02);
+        transform: scale(1.0);
       }
     }
   }

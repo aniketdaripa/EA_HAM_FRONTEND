@@ -46,61 +46,36 @@ function NavBar() {
   return (
     <>
       <div className="header">
-        <div class="nav-bar">
+        <div class="nav-bar ">
           <Link to="/home">
             {" "}
             <img src={Img} className="logo" alt="" />
           </Link>
-          <div class="navigation">
-            <div class="nav-items">
+          <div class="navigation ">
+            <div class="nav-items justify-content-center">
               <i class="uil uil-times nav-close-btn"></i>
               <Nav>
                 <Nav.Link>
-                  
+                  <Link to="/events">Events</Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to="/events">
-                    <i class="uil uil-home"></i> Events
-                  </Link>
+                  <Link to="/gallery">Gallery</Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to="/gallery">
-                    <i class="uil uil-home"></i> Gallery
-                  </Link>
+                  <Link to="/about">About Us</Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to="/about">
-                    <i class="uil uil-home"></i> About Us
-                  </Link>
-                </Nav.Link>
-                <Nav.Link>
-                  <Link to="/team">
-                    <i class="uil uil-home"></i> Team
-                  </Link>
+                  <Link to="/team">Team</Link>
                 </Nav.Link>
                 {!isLoggedIn && (
                   <Nav.Link>
-                    <Link to="/login">
-                      <i class="uil uil-home"></i> Login/SignUp
-                    </Link>
+                    <Link to="/login">Login/SignUp</Link>
                   </Nav.Link>
                 )}
                 {isLoggedIn && (
-                  <button
-                    onClick={logoutHandler}
-                    style={{
-                      fontSize: "1.2em",
-                      fontWeight: "800",
-                      border: "0",
-                      margin: "0",
-                      padding: "0",
-                      width: "0",
-                      color: "white",
-                      backgroundColor: "black",
-                    }}
-                  >
-                    Logout
-                  </button>
+                  <Nav.Link>
+                    <Link onClick={logoutHandler}>Logout</Link>
+                  </Nav.Link>
                 )}
               </Nav>
             </div>

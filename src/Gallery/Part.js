@@ -99,6 +99,6 @@ const ModuleWrapper = styled.div`
   }
 
   @media (max-width: 500px) {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 `;

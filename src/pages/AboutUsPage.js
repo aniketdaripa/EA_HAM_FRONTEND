@@ -7,9 +7,9 @@ const About = () => {
   return (
     <>
       <NavBar/>
-      <AboutContainer id="2">
+      <AboutContainer id="2" >
         
-        <AboutInnerContainer>
+        <AboutInnerContainer style={{marginTop:"100px"}}>
             
           <AboutContent
             data-aos="fade-right"
