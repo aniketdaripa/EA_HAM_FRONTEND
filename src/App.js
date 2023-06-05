@@ -21,11 +21,11 @@ function App() {
       <Route path="/" element={<HomePage />} />
         <Route path="/signUp" element={<SignUpPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
+        {/* <Route path="/home" element={<HomePage />} /> */}
         <Route path="/team" element={<TeamPage />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/adminHome" element={<HomePage/>}/>
+        {/* <Route path="/adminHome" element={<HomePage/>}/> */}
         <Route path="/forgotPassWord" element={<ForgotPassWord/>}/>
         <Route path="/setNewPassWordPage" element={<SetNewPassWordPage/>}/>
         <Route path="/addEvent" element={<AddEventPage/>}/>

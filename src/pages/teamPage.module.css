@@ -5,6 +5,7 @@
     border: 2px solid #000000;
     /* margin: 10px; */
     padding-top:60px;
+    justify-items: center;
   }
   .grid > div {
     font-size: 30px;

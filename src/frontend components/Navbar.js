@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import "../frontend components/navbar.css";
 import Img from "../Assets/HAM_LOGO-removebg-preview.png";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useState } from "react";
-
 function NavBar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
@@ -47,7 +46,7 @@ function NavBar() {
     <>
       <div className="header">
         <div class="nav-bar ">
-          <Link to="/home">
+          <Link to="/">
             {" "}
             <img src={Img} className="logo" alt="" />
           </Link>

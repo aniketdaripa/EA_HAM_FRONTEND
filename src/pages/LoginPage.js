@@ -30,11 +30,11 @@ const LoginPage = (event) => {
 
       // alert("Login successful");
       if (userType === "normalUser") {
-        Navigate("/home");
+        Navigate("/");
       } else if (userType === "admin") {
-        Navigate("/adminHome");
+        Navigate("/");
       } else if (userType === "normalClubMembers") {
-        Navigate("/home");
+        Navigate("/");
       }
     } else {
       alert("Please check your email and password");
