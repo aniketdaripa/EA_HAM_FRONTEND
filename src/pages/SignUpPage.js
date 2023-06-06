@@ -9,8 +9,8 @@ const SignUpPage = () => {
   const [email, setEmail] = useState("");
   const [phNo, setPhNo] = useState("");
   const [passingYear, setPassingYear] = useState();
-  const [course, setCourse] = useState("");
-  const [branch, setBranch] = useState("");
+  const [course, setCourse] = useState("btech");
+  const [branch, setBranch] = useState("CSE");
   const [passWord, setPassWord] = useState("");
 
   const nameChangeHandler = (e) => {
