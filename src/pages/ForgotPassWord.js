@@ -86,6 +86,7 @@ const ForgotPassPage = () => {
   };
   return (
     <>
+      <button onClick={()=>{Navigate(-1)}}>Back</button>
       {showEmail && (
         <div>
           <form onSubmit={onSignInSubmit}>
