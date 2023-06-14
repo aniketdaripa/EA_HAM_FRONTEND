@@ -2,10 +2,12 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 // import "./loginPage.css";
 import classes from "./loginPage.module.css";
 const LoginPage = (event) => {
   const Navigate = useNavigate();
+  const history = useHistory();
 
   const [enteredUserData, setEnteredData] = useState({
     email: "",
@@ -49,7 +51,7 @@ const LoginPage = (event) => {
   };
   return (
     <>
-      <button onClick={Navigate(-1)}>Back</button>
+      <button onClick={history.goBack()}>Back</button>
       <form  onSubmit={submitHandler}>
         <h3 style={{background:"transparent"}}>Login Here</h3>
 
