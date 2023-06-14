@@ -49,6 +49,7 @@ const LoginPage = (event) => {
   };
   return (
     <>
+      <button onClick={Navigate(-1)}>Back</button>
       <form  onSubmit={submitHandler}>
         <h3 style={{background:"transparent"}}>Login Here</h3>
 

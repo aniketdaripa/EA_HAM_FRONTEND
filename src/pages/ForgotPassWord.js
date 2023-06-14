@@ -33,6 +33,7 @@ const ForgotPassPage = () => {
   const onSignInSubmit = async (e) => {
     e.preventDefault();
     configureCaptcha();
+    console.log(enteredEmail);
     //fetch phone number from database
     let res = await axios.get("https://ea-ham-backend.onrender.com/getCurrUserData", {
       params: { currUserEmail: enteredEmail },

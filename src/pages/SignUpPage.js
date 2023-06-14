@@ -57,6 +57,7 @@ const SignUpPage = () => {
   };
   return (
     <div>
+      <button onClick={Navigate(-1)}>Back</button>
       <form action="" onSubmit={submitHandler}>
         <label>Name</label>
         <input type="text" onChange={nameChangeHandler} value={name} />
