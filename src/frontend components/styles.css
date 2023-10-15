@@ -1,0 +1,10 @@
+#tsparticles{
+    height: 40vh;
+}
+.Typewriter__wrapper {
+    background: none;
+}
+.Typewriter__cursor{
+    color: transparent;
+    background: none;
+}

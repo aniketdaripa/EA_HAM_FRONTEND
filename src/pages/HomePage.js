@@ -10,7 +10,7 @@ import NavBar from "../frontend components/Navbar";
 import Footer from "../frontend components/Footer";
 import HomePagecss from "./HomePagecss.css"
 import videoFile from "../Gallery/images/v1.mp4"
-
+import ParticlesBackground from "../frontend components/ParticlesBackground";
 const HomePage = () => {
   const Navigate = useNavigate();
   const [currUserData, setCurrUserData] = useState({});
@@ -101,13 +101,13 @@ const HomePage = () => {
     <NavBar/>
    
 
-
-    {/* <!-- About Box Starts here --> */}
-    <div style={{backgroundColor: "black",paddingTop:"75px"}} id="Home">
-      <video  id="myVideo" muted autoPlay  loop>
+    <div style={{paddingTop:"75px", height:"60vh"}} id="Home">
+      {/* <video  id="myVideo" muted autoPlay  loop>
         <source src={videoFile} type="video/mp4"/>
-      </video>
+      </video> */}
+      <ParticlesBackground/>
     </div>
+    {/* <!-- About Box Starts here --> */}
     <div class="about-container">
       <div class="about">
         <div class="about-heading"><h1>About Us</h1></div>
