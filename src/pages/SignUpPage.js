@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import CIcon from '@coreui/icons-react';
+import * as icon from '@coreui/icons';
 const SignUpPage = () => {
   const Navigate = useNavigate();
   const [name, setName] = useState("");
@@ -57,7 +58,8 @@ const SignUpPage = () => {
   };
   return (
     <div>
-      <button onClick={()=>{Navigate(-1)}}>Back</button>
+      <button onClick={()=>{Navigate(-1)}} style={{background:"none",border:"0px"}}><CIcon icon={icon.cilArrowLeft} size="sm" style={{height:"5vh", background:"none"}}/></button>
+
       <form action="" onSubmit={submitHandler}>
         <label>Name</label>
         <input type="text" onChange={nameChangeHandler} value={name} />

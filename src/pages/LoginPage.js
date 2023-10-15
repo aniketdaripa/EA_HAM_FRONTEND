@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import "./loginPage.css";
 import classes from "./loginPage.module.css";
+// import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import CIcon from '@coreui/icons-react';
+import * as icon from '@coreui/icons';
 const LoginPage = (event) => {
   const Navigate = useNavigate();
 
@@ -49,7 +52,7 @@ const LoginPage = (event) => {
   };
   return (
     <>
-      <button onClick={()=>{Navigate(-1)}}>Back</button>
+      <button onClick={()=>{Navigate(-1)}} style={{background:"none",border:"0px"}}><CIcon icon={icon.cilArrowLeft} size="sm" style={{height:"5vh", background:"none"}}/></button>
       <form  onSubmit={submitHandler}>
         <h3 style={{background:"transparent"}}>Login Here</h3>
 

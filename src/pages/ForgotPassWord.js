@@ -3,6 +3,8 @@ import firebase from "../firebase";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import CIcon from "@coreui/icons-react";
+import * as icon from "@coreui/icons";
 const ForgotPassPage = () => {
   const Navigate = useNavigate();
 
@@ -35,11 +37,14 @@ const ForgotPassPage = () => {
     configureCaptcha();
     console.log(enteredEmail);
     //fetch phone number from database
-    let res = await axios.get("https://ea-ham-backend.onrender.com/getCurrUserData", {
-      params: { currUserEmail: enteredEmail },
-    });
+    let res = await axios.get(
+      "https://ea-ham-backend.onrender.com/getCurrUserData",
+      {
+        params: { currUserEmail: enteredEmail },
+      }
+    );
     let phoneNumber = "+91" + res.data.phNo;
-    
+
     console.log(phoneNumber);
 
     const appVerifier = window.recaptchaVerifier;
@@ -86,7 +91,18 @@ const ForgotPassPage = () => {
   };
   return (
     <>
-      <button onClick={()=>{Navigate(-1)}}>Back</button>
+      <button
+        onClick={() => {
+          Navigate(-1);
+        }}
+        style={{ background: "none", border: "0px" }}
+      >
+        <CIcon
+          icon={icon.cilArrowLeft}
+          size="sm"
+          style={{ height: "5vh", background: "none" }}
+        />
+      </button>
       {showEmail && (
         <div>
           <form onSubmit={onSignInSubmit}>
