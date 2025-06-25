@@ -112,7 +112,7 @@ const HomePage = () => {
       <div class="about">
         <div class="about-heading"><h1>About Us</h1></div>
         <div class="about-text">
-         Welcome to the EA HAM Club – the Electronics and Advanced Hardware & Automation Makers Club of our college!  We are a vibrant community of tech enthusiasts, innovators, and problem-solvers passionate about exploring the frontiers of electronics, embedded systems, automation, and emerging technologies. From hands-on hardware projects to cutting-edge research, we bring together curious minds to design, build, and innovate solutions that matter.  At EA HAM, we dive into real-world challenges using tools like microcontrollers, IoT, robotics, AI, and advanced circuitry. Whether it’s prototyping smart devices, working on sustainable tech, or organizing workshops and hackathons, we aim to foster a culture of learning by doing.  Our mission is to bridge the gap between theory and practice, equipping students with the skills and confidence to lead in the fast-evolving tech landscape. Join us as we experiment, build, collaborate, and grow – one project at a time.
+         Welcome to the EA HAM Club – the Electronics and Advanced Hardware & Automation Makers Club of our college!  We are a vibrant community of tech enthusiasts, innovators, and problem-solvers passionate about exploring the frontiers of electronics, embedded systems, automation, and emerging technologies. From hands-on hardware projects to cutting-edge research, we bring together curious minds to design, build, and innovate solutions that matter.  At EA HAM, we dive into real-world challenges using tools like microcontrollers, IoT, robotics, AI, and advanced circuitry.
         </div>
       </div>
     </div>
